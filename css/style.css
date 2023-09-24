@@ -181,6 +181,17 @@ section#about .wrapper .about-text h2 {
     text-align: center;
     color: white;
 }
+section#about .wrapper .about-text .image {
+    display: flex;
+    justify-content: center;
+}
+
+section#about .wrapper .about-text img {
+    border-radius: 100px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    margin: 0 auto;
+}
 
 section#about .wrapper .about-detail p {
     text-align: center;
@@ -334,6 +345,8 @@ section#service .wrapper .card-container .card a:hover {
     section#about .wrapper .about-text {
         align-self: flex-start;
         width: 50%;
+        display: flex;
+        flex-flow: column wrap;
     }
     section#about .wrapper .about-text h2 {
         font-size: 2rem;
@@ -360,7 +373,6 @@ section#service .wrapper .card-container .card a:hover {
     }
     section#service .wrapper .card-container {
         flex-flow: row wrap;
-        background-color: salmon;
         align-items: stretch;
         justify-content: space-evenly;
     }
