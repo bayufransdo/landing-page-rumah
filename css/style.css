@@ -277,6 +277,25 @@ section#service .wrapper .card-container .card a:hover {
 }
 /* Service style end */
 
+/* Footer style start */
+footer#contact {
+    padding: 3rem 1rem;
+    background-color: #0f172a;
+    color: white;
+}
+
+footer#contact .wrapper {
+    max-width: 640px;
+    margin-inline: auto;
+    text-align: center;
+}
+footer#contact .wrapper p.copyright {
+    margin-top: 2rem;
+    border-top: 1px solid cyan;
+    padding-top: 1rem;
+}
+/* Footer style end */
+
 /* Responsive start */
 @media screen and (min-width: 1024px) {
     /* Header style start */
@@ -388,5 +407,11 @@ section#service .wrapper .card-container .card a:hover {
         margin-top: auto;
     }
     /* Service style end */
+
+    /* Footer style start */
+    footer#contact .wrapper {
+        max-width: 1280px;
+    }
+    /* Footer style end */
 }
 /* Responsive end */
