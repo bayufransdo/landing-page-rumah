@@ -3,6 +3,9 @@ html {
     scroll-behavior: smooth;
 }
 /* Reset start */
+* {
+    box-sizing: border-box;
+}
 body {
     padding: 0;
     margin: 0;
@@ -16,6 +19,7 @@ header {
     background-color: #6096b4;
     position: fixed;
     border-bottom: 1px solid #93bfcf;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     top: 0;
     left: 0;
     right: 0;
@@ -117,8 +121,7 @@ header .header-wrapper nav ul li a:hover {
 /* main style start */
 main {
     margin-top: 20px;
-    padding-inline: 1rem;
-    padding-block: 3rem;
+    padding: 4rem 1rem;
 }
 
 main .main-wrapper {
@@ -139,6 +142,7 @@ main .main-wrapper .content .image img {
     width: 300px;
 }
 main .main-wrapper .content aside h1 {
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -164,7 +168,7 @@ main .main-wrapper .content aside a:hover {
 /* About style start */
 section#about {
     background-color: #6096b4;
-    padding: 1rem 1rem;
+    padding: 4rem 1rem;
 }
 
 section#about .wrapper {
@@ -173,6 +177,7 @@ section#about .wrapper {
 }
 
 section#about .wrapper .about-text h2 {
+    font-size: 2rem;
     text-align: center;
     color: white;
 }
@@ -210,7 +215,7 @@ section#about .wrapper .about-detail .social-media ul li a:hover {
 
 /* Service style start */
 section#service {
-    padding: 1rem 1rem;
+    padding: 4rem 1rem;
 }
 
 section#service .wrapper {
@@ -222,22 +227,25 @@ section#service .wrapper .service-title {
     text-align: center;
     padding-block: 1rem;
 }
+section#service .wrapper .service-title h2 {
+    font-size: 2rem;
+}
 
 section#service .wrapper .card-container {
     display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-wrap: wrap;
+    justify-items: stretch;
+    flex-flow: column wrap;
     gap: 1rem;
 }
 
 section#service .wrapper .card-container .card {
     max-width: 640px;
     border-radius: 10px;
+    flex-basis: 100%;
     padding: 1rem 1rem;
     background-color: cyan;
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-        0 8px 10px -6px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 section#service .wrapper .card-container .card h3 {
     margin: 0;
@@ -328,7 +336,7 @@ section#service .wrapper .card-container .card a:hover {
         width: 50%;
     }
     section#about .wrapper .about-text h2 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     section#about .wrapper .about-detail {
@@ -351,11 +359,21 @@ section#service .wrapper .card-container .card a:hover {
         max-width: 1280px;
     }
     section#service .wrapper .card-container {
-        width: 100%;
+        flex-flow: row wrap;
+        background-color: salmon;
+        align-items: stretch;
+        justify-content: space-evenly;
     }
     section#service .wrapper .card-container .card {
-        width: 25%;
-        height: 100%;
+        flex: 0 0 20rem;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    section#service .wrapper .card-container .card a {
+        width: max-content;
+        justify-self: self-end;
+        margin-top: auto;
     }
     /* Service style end */
 }
