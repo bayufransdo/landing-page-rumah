@@ -141,12 +141,12 @@ main .main-wrapper .content .image img {
 
     width: 300px;
 }
-main .main-wrapper .content aside h1 {
+main .main-wrapper .content .detail h1 {
     font-size: 2rem;
     font-weight: 700;
 }
 
-main .main-wrapper .content aside a {
+main .main-wrapper .content .detail a {
     color: white;
     font-size: 0.9em;
     background-color: #6096b4;
@@ -158,11 +158,49 @@ main .main-wrapper .content aside a {
         0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-main .main-wrapper .content aside a:hover {
+main .main-wrapper .content .detail a:hover {
     opacity: 0.7;
     box-shadow: none;
 }
 
+main .main-wrapper aside.share {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(70%, -50%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+main .main-wrapper aside.share .wrapper {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #053b50;
+    padding: 0.5rem 0.5rem;
+    transition: 0.5s;
+}
+main .main-wrapper aside.share:hover .wrapper {
+    transform: translate(-70%, 0);
+}
+
+main .main-wrapper aside.share .wrapper p {
+    transform: translate(-45%, 350%) rotate(-90deg);
+    color: white;
+    font-weight: 700;
+}
+main .main-wrapper aside.share:hover .wrapper p {
+    transform: translate(0, 0);
+}
+main .main-wrapper aside.share .wrapper ul {
+    padding: 0;
+}
+main .main-wrapper aside.share .wrapper ul li {
+    list-style-type: none;
+    margin-block: 0.5rem;
+}
+main .main-wrapper aside.share .wrapper ul li a {
+    font-size: 1.25rem;
+    color: white;
+}
 /* main style end */
 
 /* About style start */
@@ -244,7 +282,6 @@ section#service .wrapper .service-title h2 {
 
 section#service .wrapper .card-container {
     display: flex;
-    justify-items: stretch;
     flex-flow: column wrap;
     gap: 1rem;
 }
@@ -338,19 +375,31 @@ footer#contact .wrapper p.copyright {
         width: 50%;
     }
 
-    main .main-wrapper .content aside {
+    main .main-wrapper .content .detail {
         width: 50%;
         text-align: left;
     }
-    main .main-wrapper .content aside h1 {
+    main .main-wrapper .content .detail h1 {
         font-size: 2.5rem;
     }
-    main .main-wrapper .content aside p {
+    main .main-wrapper .content .detail p {
         font-size: 1.2rem;
     }
-    main .main-wrapper .content aside a {
+    main .main-wrapper .content .detail a {
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
+    }
+
+    main .main-wrapper aside.share .wrapper {
+        padding: 1rem 1.5rem;
+    }
+
+    main .main-wrapper aside.share .wrapper p {
+        transform: translate(-65%, 390%) rotate(-90deg);
+    }
+
+    main .main-wrapper aside.share .wrapper ul li a {
+        font-size: 1.5rem;
     }
     /* Main style end */
 
