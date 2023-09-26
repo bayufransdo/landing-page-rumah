@@ -120,14 +120,14 @@ header .header-wrapper nav ul li a:hover {
 
 /* main style start */
 main {
-    margin-top: 20px;
-    padding: 4rem 1rem;
+    margin-top: 3rem;
 }
 
 main .main-wrapper {
     max-width: 640px;
     margin-inline: auto;
     text-align: center;
+    padding: 4rem 1rem;
 }
 
 main .main-wrapper .content .image {
@@ -204,89 +204,89 @@ main .main-wrapper aside.share .wrapper ul li a {
 /* main style end */
 
 /* About style start */
-section#about {
+main section#about {
     background-color: #6096b4;
     padding: 4rem 1rem;
 }
 
-section#about .wrapper {
+main section#about .wrapper {
     max-width: 640px;
     margin-inline: auto;
 }
 
-section#about .wrapper .about-text h2 {
+main section#about .wrapper .about-text h2 {
     font-size: 2rem;
     text-align: center;
     color: white;
 }
-section#about .wrapper .about-text .image {
+main section#about .wrapper .about-text .image {
     display: flex;
     justify-content: center;
 }
 
-section#about .wrapper .about-text img {
+main section#about .wrapper .about-text img {
     border-radius: 100px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
         0 4px 6px -4px rgb(0 0 0 / 0.1);
     margin: 0 auto;
 }
 
-section#about .wrapper .about-detail p {
+main section#about .wrapper .about-detail p {
     text-align: center;
     font-weight: 300;
     color: white;
 }
 
-section#about .wrapper .about-detail .social-media {
+main section#about .wrapper .about-detail .social-media {
     margin-top: 30px;
 }
 
-section#about .wrapper .about-detail .social-media ul {
+main section#about .wrapper .about-detail .social-media ul {
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 2.5rem;
 }
 
-section#about .wrapper .about-detail .social-media ul li {
+main section#about .wrapper .about-detail .social-media ul li {
     list-style-type: none;
 }
 
-section#about .wrapper .about-detail .social-media ul li a {
+main section#about .wrapper .about-detail .social-media ul li a {
     color: white;
     font-size: 1.2rem;
 }
 
-section#about .wrapper .about-detail .social-media ul li a:hover {
+main section#about .wrapper .about-detail .social-media ul li a:hover {
     opacity: 0.7;
 }
 /* About style end */
 
 /* Service style start */
-section#service {
+main section#service {
     padding: 4rem 1rem;
 }
 
-section#service .wrapper {
+main section#service .wrapper {
     max-width: 640px;
     margin-inline: auto;
 }
 
-section#service .wrapper .service-title {
+main section#service .wrapper .service-title {
     text-align: center;
     padding-block: 1rem;
 }
-section#service .wrapper .service-title h2 {
+main section#service .wrapper .service-title h2 {
     font-size: 2rem;
 }
 
-section#service .wrapper .card-container {
+main section#service .wrapper .card-container {
     display: flex;
     flex-flow: column wrap;
     gap: 1rem;
 }
 
-section#service .wrapper .card-container .card {
+main section#service .wrapper .card-container .card {
     max-width: 640px;
     border-radius: 10px;
     flex-basis: 100%;
@@ -295,12 +295,12 @@ section#service .wrapper .card-container .card {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
         0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
-section#service .wrapper .card-container .card h3 {
+main section#service .wrapper .card-container .card h3 {
     margin: 0;
     padding: 0;
 }
 
-section#service .wrapper .card-container .card a {
+main section#service .wrapper .card-container .card a {
     display: inline-block;
     padding: 0.5rem 0.8rem;
     background-color: #6096b4;
@@ -309,7 +309,7 @@ section#service .wrapper .card-container .card a {
     border-radius: 10px;
 }
 
-section#service .wrapper .card-container .card a:hover {
+main section#service .wrapper .card-container .card a:hover {
     opacity: 0.7;
 }
 /* Service style end */
@@ -363,6 +363,9 @@ footer#contact .wrapper p.copyright {
     /* Header style end */
 
     /* Main style start */
+    main {
+        margin-top: 5rem;
+    }
     main .main-wrapper {
         max-width: 1280px;
         padding: 2rem 0;
@@ -404,53 +407,53 @@ footer#contact .wrapper p.copyright {
     /* Main style end */
 
     /* About style start */
-    section#about .wrapper {
+    main section#about .wrapper {
         max-width: 1280px;
         display: flex;
         align-items: center;
     }
 
-    section#about .wrapper .about-text {
+    main section#about .wrapper .about-text {
         align-self: flex-start;
         width: 50%;
         display: flex;
         flex-flow: column wrap;
     }
-    section#about .wrapper .about-text h2 {
+    main section#about .wrapper .about-text h2 {
         font-size: 2rem;
     }
 
-    section#about .wrapper .about-detail {
+    main section#about .wrapper .about-detail {
         width: 50%;
     }
 
-    section#about .wrapper .about-detail p {
+    main section#about .wrapper .about-detail p {
         text-align: left;
         font-size: 1.1rem;
     }
 
-    section#about .wrapper .about-detail .social-media ul {
+    main section#about .wrapper .about-detail .social-media ul {
         justify-content: left;
         gap: 1rem;
     }
     /* About style end */
 
     /* Service style start */
-    section#service .wrapper {
+    main section#service .wrapper {
         max-width: 1280px;
     }
-    section#service .wrapper .card-container {
+    main section#service .wrapper .card-container {
         flex-flow: row wrap;
         align-items: stretch;
         justify-content: space-evenly;
     }
-    section#service .wrapper .card-container .card {
+    main section#service .wrapper .card-container .card {
         flex: 0 0 20rem;
         display: flex;
         flex-flow: column wrap;
     }
 
-    section#service .wrapper .card-container .card a {
+    main section#service .wrapper .card-container .card a {
         width: max-content;
         justify-self: self-end;
         margin-top: auto;
