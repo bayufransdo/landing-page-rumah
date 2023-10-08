@@ -201,6 +201,9 @@ main .main-wrapper aside.share .wrapper ul li a {
     font-size: 1.25rem;
     color: white;
 }
+main .main-wrapper aside.share .wrapper ul li a:hover {
+    opacity: 0.7;
+}
 /* main style end */
 
 /* About style start */
